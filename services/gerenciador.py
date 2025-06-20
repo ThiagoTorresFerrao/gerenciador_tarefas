@@ -31,3 +31,7 @@ class GerenciadorTarefas:
         if 0 <= indice < len(self.tarefas):
             self.tarefas[indice].concluir()
             self.salvar_tarefas()
+
+    def contar_tarefas(self):
+        """Retorna o total de tarefas cadastradas."""
+        return len(self.tarefas)
